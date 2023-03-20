@@ -1,12 +1,14 @@
 import {async} from 'regenerator-runtime'
-import {API_URL} from './config.js'
+import {API_URL,RES_PER_PAGE} from './config.js'
 import {getJOSN} from './hlepers.js'
 
 export const state = {
     recipe: {},
     search:{
        query:'',
-       results:[]
+       results:[],
+       page:1,
+       resultsPerPage:RES_PER_PAGE,
     }
 }
 
@@ -55,4 +57,13 @@ export const loadSearch = async function(item) {
     }
 }
 
+export const getSearchResultsPage = function (page = state.search.page) {
+    state.search.page = page;
+    // console.log( page)
+    const start = (page-1) * state.search.resultsPerPage;
+    const end = page * state.search.resultsPerPage;
+    // console.log(start,end)
+    // console.log(state.search.results)
+    return state.search.results.slice(start,end);
+}
 // loadSearch('pizza')
