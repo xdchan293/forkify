@@ -67,3 +67,13 @@ export const getSearchResultsPage = function (page = state.search.page) {
     return state.search.results.slice(start,end);
 }
 // loadSearch('pizza')
+
+export const updateServings = function (newServing) {
+     const rate = newServing/state.recipe.servings;
+
+     state.recipe.ingredients.forEach(ing => {
+        ing.quantity = (ing.quantity) * rate;
+     });
+
+     state.recipe.servings = newServing;
+}

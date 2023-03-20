@@ -610,8 +610,13 @@ const controlPagination = function(gotoPage) {
     (0, _resultsViewJsDefault.default).render(_moduleJs.getSearchResultsPage(gotoPage));
     (0, _paginationViewJsDefault.default).render(_moduleJs.state.search);
 };
+const controlServings = function(newServing) {
+    _moduleJs.updateServings(newServing);
+    (0, _recipeViewJsDefault.default).render(_moduleJs.state.recipe);
+};
 const init = function() {
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
+    (0, _recipeViewJsDefault.default).addHandlerUpdateServings(controlServings);
     (0, _searchViewJsDefault.default).addHandelerSearch(controlSearchResult);
     (0, _paginationViewJsDefault.default).addHandelerClick(controlPagination);
 };
@@ -2013,6 +2018,7 @@ parcelHelpers.export(exports, "state", ()=>state);
 parcelHelpers.export(exports, "loadRecipe", ()=>loadRecipe);
 parcelHelpers.export(exports, "loadSearch", ()=>loadSearch);
 parcelHelpers.export(exports, "getSearchResultsPage", ()=>getSearchResultsPage);
+parcelHelpers.export(exports, "updateServings", ()=>updateServings);
 var _regeneratorRuntime = require("regenerator-runtime");
 var _configJs = require("./config.js");
 var _hlepersJs = require("./hlepers.js");
@@ -2069,8 +2075,14 @@ const getSearchResultsPage = function(page = state.search.page) {
     // console.log(start,end)
     // console.log(state.search.results)
     return state.search.results.slice(start, end);
-} // loadSearch('pizza')
-;
+};
+const updateServings = function(newServing) {
+    const rate = newServing / state.recipe.servings;
+    state.recipe.ingredients.forEach((ing)=>{
+        ing.quantity = ing.quantity * rate;
+    });
+    state.recipe.servings = newServing;
+};
 
 },{"regenerator-runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./config.js":"k5Hzs","./hlepers.js":"b2S0n"}],"dXNgZ":[function(require,module,exports) {
 /**
@@ -2750,6 +2762,14 @@ class recipeView extends (0, _viewJsDefault.default) {
             window.addEventListener(element, handler);
         });
     }
+    addHandlerUpdateServings(handeler) {
+        this._parentElement.addEventListener("click", function(e) {
+            const btn = e.target.closest(".btn--increase-servings");
+            if (!btn) return;
+            const updateTo = Number(btn.dataset.updateTo);
+            if (updateTo > 0) handeler(updateTo);
+        });
+    }
     //////////////////
     //私有方法
     ////////////////////
@@ -2778,12 +2798,12 @@ class recipeView extends (0, _viewJsDefault.default) {
          <span class="recipe__info-text">servings</span>
 
          <div class="recipe__info-buttons">
-           <button class="btn--tiny btn--increase-servings">
+           <button class="btn--tiny btn--increase-servings" data-update-to="${this._data.servings - 1}">
              <svg>
                <use href="${0, _iconsSvgDefault.default}#icon-minus-circle"></use>
              </svg>
            </button>
-           <button class="btn--tiny btn--increase-servings">
+           <button class="btn--tiny btn--increase-servings" data-update-to="${this._data.servings + 1}">
              <svg>
                <use href="${0, _iconsSvgDefault.default}#icon-plus-circle"></use>
              </svg>
