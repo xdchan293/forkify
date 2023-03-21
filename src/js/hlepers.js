@@ -21,3 +21,24 @@ export const getJOSN = async function(url) {
         throw err;
     }
 }
+
+export const sendJOSN = async function(url,uploadData) {
+  try{
+     
+    const fetchPro = fetch(url,{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify(uploadData)
+    }) 
+    //console.log(url,JSON.stringify(uploadData))
+    const res = await Promise.race([fetchPro,timeout(TIMEOUT_SEC)]);
+    const data = await res.json()
+
+  if(!res.ok) throw new Error(`${res.message} (${res.status})`);
+  return data;
+  }catch(err) {
+      throw err;
+  }
+}

@@ -2,13 +2,16 @@ import icons from 'url:../../img/icons.svg'
 
 export default class View {
     _data;
-    render(data) {
+    render(data,render = true) {
         if(!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
         this._data = data;
         // console.log(data    )
         const markup = this._generateMarkup();
-        this._clean();
+        // previwe 的数据传出去了
+        if(!render) return markup;
         // console.log(markup)
+        this._clean();
+        
         this._parentElement.insertAdjacentHTML('afterbegin',markup);
     }
    
@@ -25,6 +28,33 @@ export default class View {
 
     //   console.log(markup)
       this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    }
+
+    update(data) {
+      
+        this._data = data;
+        // console.log(data    )
+        const newMarkup = this._generateMarkup();
+        const newDom = document.createRange().createContextualFragment(newMarkup);
+
+        const newElement = Array.from(newDom.querySelectorAll('*'));
+        const curElement = Array.from(this._parentElement.querySelectorAll('*'));
+
+        newElement.forEach((newEl,index) => {
+            const curEl = curElement[index];
+
+            if(!newEl.isEqualNode(curEl) &&
+            newEl.firstChild?.nodeValue.trim()!='') {
+              curEl.textContent = newEl.textContent;
+            }
+
+            if(!newEl.isEqualNode(curEl)) {
+              Array.from(newEl.attributes).forEach(attr => {
+                curEl.setAttribute(attr.name,attr.value);
+              })
+            }
+        })
+
     }
 
     renderError(message = this._errorMessage) {
