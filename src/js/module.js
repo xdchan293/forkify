@@ -1,6 +1,7 @@
 import {async} from 'regenerator-runtime'
 import {API_URL,RES_PER_PAGE,KEY} from './config.js'
-import {getJOSN,sendJOSN} from './hlepers.js'
+// import {getJOSN,sendJOSN} from './hlepers.js'
+import {AJAX} from './hlepers.js'
 
 export const state = {
     recipe: {},
@@ -32,7 +33,7 @@ const createRecipeObj = function(data) {
 //加载具体食物的食谱
 export const loadRecipe = async function(id) {
     try{
-    const data = await getJOSN(`${API_URL}/${id}`);
+    const data = await AJAX(`${API_URL}/${id}?key=${KEY}`);
     state.recipe = createRecipeObj(data);
 
     if(state.bookmarks.some(item => item.id === id)) state.recipe.bookmarked = true;
@@ -46,7 +47,7 @@ export const loadSearch = async function(item) {
     try{
         state.search.query = item;
 
-        const {data} = await getJOSN(`${API_URL}?search=${item}`);
+        const {data} = await AJAX(`${API_URL}?search=${item}&key=${KEY}`);
         // console.log(data)
     
         state.search.results = data.recipes.map(rec => {
@@ -55,6 +56,7 @@ export const loadSearch = async function(item) {
             title:rec.title,
             publisher:rec.publisher,
             image: rec.image_url,
+            ...(rec.key && {key:rec.key})
             
             }
         })
@@ -116,8 +118,8 @@ export const uploadNewRecipe = async function(newRecipe) {
     //筛选有效的配料 
       return item[0].startsWith('ingredient') && item[1] !== '';
    }).map(ingredient => {
-      const ingArr = ingredient[1].replaceAll(' ','') //格式化处理
-      .split(',');
+      const ingArr = ingredient[1] //格式化处理
+      .split(',').map(item => item.trim());
     //   console.log(ingArr);
     if(ingArr.length !== 3) throw new Error('Wrong ingredient format! Please use correct format :)');
       
@@ -138,7 +140,7 @@ export const uploadNewRecipe = async function(newRecipe) {
         ingredients,
     }
     // console.log(recipe)
-    const data = await sendJOSN(`${API_URL}?key=${KEY}`,recipe);
+    const data = await AJAX(`${API_URL}?key=${KEY}`,recipe);
     // console.log(data);
     state.recipe = createRecipeObj(data);
     // clearBookmark()

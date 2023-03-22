@@ -100,6 +100,7 @@ const controlBookmark = function() {
    bookmarksView.render(module.state.bookmarks);
 }
 
+//上传新的食谱，设为默认收藏，并做相关渲染
 const controlAddRecipe = async function(recipe) {
   //  console.log(recipe)
    try{
@@ -113,6 +114,8 @@ const controlAddRecipe = async function(recipe) {
     addRecipeView.renderMessage();
 
     bookmarksView.render(module.state.bookmarks);
+
+    window.history.pushState(null,'',`#${module.state.recipe.id}`)
 
     setTimeout(function () {
       addRecipeView.toggleClasslist()

@@ -2,7 +2,7 @@
 71D:\360MoveData\Users\Hasee\Desktop\forkify\forkify-flowchart-part-1.png132886955210000000 0
 74D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\full\error133235394389963190 1
 87D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\regions\BY.js133235118674743112 0
-59D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\module.js133238911631080980 0
+59D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\module.js133239358475516188 0
 82D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\nth-check\lib\esm\index.js133235118658810205 0
 105D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Makefile133235118668050514 0
 92D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\lmdb\dependencies\lz4\lib\lz4frame.h133235118694020868 0
@@ -23,7 +23,7 @@
 70D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\lmdb\README.md133235118705310077 0
 112D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\@parcel\package-manager\test\fixtures\empty\package.json133235118717707199 0
 116D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\posthtml\node_modules\posthtml-parser\dist\chunk.2UQLUWPH.js133235118721437678 0
-47D:\360MoveData\Users\Hasee\Desktop\forkify\dist133238912347700374 1
+47D:\360MoveData\Users\Hasee\Desktop\forkify\dist133239358476140383 1
 86D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\full\string\replace.js133235394380071746 0
 90D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\cosmiconfig\dist\ExplorerSync.d.ts133235118670761081 0
 70D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\yaml\types.mjs133235118672711948 0
@@ -33,7 +33,7 @@
 72D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\cosmiconfig\dist133235118671361105 1
 82D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\es\string\index.js133235394369486696 0
 77D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\domutils\lib\index.js133235118658899971 0
-60D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\hlepers.js133238889074515870 0
+60D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\hlepers.js133239344789548326 0
 70D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\dotenv\LICENSE133235118665268223 0
 80D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\timsort\build\timsort.js133235118662498699 0
 113D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\modules\esnext.async-iterator.as-indexed-pairs.js133235394356634654 0
@@ -162,7 +162,7 @@
 86D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\internals\set-union.js133235394381487973 0
 59D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\config.js133238898843225312 0
 73D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\binary-extensions133235119880107760 1
-63D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\controller.js133238912346942400 0
+63D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\controller.js133239339759797103 0
 100D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\iframe-sandbox.js133235118687250536 0
 102D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\css-select\lib\pseudo-selectors\index.d.ts.map133235118667407911 0
 96D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\modules\es.array.reduce-right.js133235394350954737 0
@@ -205,7 +205,7 @@
 92D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\full\set\is-disjoint-from.js133235394371581108 0
 108D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\css-boxdecorationbreak.js133235118676983782 0
 65D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\lmdb\dict133235118705500198 1
-70D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\views\previewView.js133238660920718138 0
+70D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\views\previewView.js133239351756589033 0
 67D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\terser\dist133235118674155256 1
 85D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\@parcel\transformer-image\lib133235118690129259 1
 61D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\acorn133235118663441254 1
@@ -222,7 +222,7 @@
 74D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\nullthrows\LICENSE133235118673956214 0
 81D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\es\promise\any.js133235394342567383 0
 96D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\features\array\virtual\splice.js133235394384350310 0
-69D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\views\recipeView.js133238621237635263 0
+69D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\views\recipeView.js133239350310408022 0
 74D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\parse-json\license133235118655947723 0
 70D:\360MoveData\Users\Hasee\Desktop\forkify\src\js\views\resultsView.js133238690904102897 0
 84D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\css-tree\lib\parser\index.js133235118673469226 0
@@ -653,7 +653,7 @@
 72D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\anymatch\LICENSE133235119879509509 0
 72D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\svgo\lib\svgo.js133235118674250003 0
 64D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\mdn-data133235118669698825 1
-65D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.e37f48ea.js133238912347650512 0
+65D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.e37f48ea.js133239358476100488 0
 80D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\to-regex-range\README.md133235118658620466 0
 113D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\modules\es.object.get-own-property-descriptors.js133235394352131591 0
 75D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\css-tree\lib\syntax133235118674175203 1
@@ -2814,7 +2814,7 @@
 85D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\@lezer\common\dist\parse.d.ts133235118673637428 0
 87D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\regions\KI.js133235118689109487 0
 68D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\is-json\test133235118661462038 1
-69D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.e37f48ea.js.map133238912347690398 0
+69D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.e37f48ea.js.map133239358476130737 0
 77D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\is-json\test\index.js133235118661558504 0
 95D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\actual\dom-collections\index.js133235394368908530 0
 71D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\is-glob\LICENSE133235118655997590 0
@@ -3009,7 +3009,7 @@
 87D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\full\data-view\index.js133235394370045200 0
 86D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\stable\string\split.js133235394384639539 0
 77D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\get-port\package.json133235118707173004 0
-66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.f7626f62.css133238911487861837 0
+66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.f7626f62.css133239344937387341 0
 104D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\features\async-iterator\async-dispose.js133235394343871755 0
 82D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\fractional\array_mixins.js133236074580305170 0
 78D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\domutils\lib\legacy.js133235118660457622 0
@@ -3970,7 +3970,7 @@
 89D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\stable\instance\repeat.js133235394379732662 0
 94D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\stable\instance\replace-all.js133235394379922149 0
 89D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\full\symbol\observable.js133235394376960061 0
-65D:\360MoveData\Users\Hasee\Desktop\forkify\dist\logo.726d37a8.png133238911488312589 0
+65D:\360MoveData\Users\Hasee\Desktop\forkify\dist\logo.726d37a8.png133239344937895980 0
 74D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\chokidar\README.md133235119880268983 0
 88D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\stable\instance\slice.js133235394382714684 0
 92D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\proposals\math-extensions.js133235394375912877 0
@@ -4874,7 +4874,7 @@
 87D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\regions\VI.js133235118698549215 0
 88D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\internals\is-raw-json.js133235394372119667 0
 84D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\internals\iterate.js133235394372896279 0
-70D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.f7626f62.css.map133238911487951621 0
+70D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.f7626f62.css.map133239344937427233 0
 103D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\@parcel\optimizer-terser\lib\TerserOptimizer.js133235118700639259 0
 93D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\internals\iterator-indexed.js133235394373055887 0
 89D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\core-js\internals\iterator-map.js133235394373066125 0
@@ -7106,7 +7106,7 @@
 91D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\webvr.js133235118700518901 0
 91D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\webxr.js133235118700619822 0
 97D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\will-change.js133235118700679143 0
-68D:\360MoveData\Users\Hasee\Desktop\forkify\dist\favicon.8b2f57bf.png133238911487861837 0
+68D:\360MoveData\Users\Hasee\Desktop\forkify\dist\favicon.8b2f57bf.png133239344937407289 0
 90D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\woff.js133235118700699107 0
 91D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\woff2.js133235118700876243 0
 94D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\caniuse-lite\data\features\wordwrap.js133235118700916872 0
@@ -7931,8 +7931,8 @@
 69D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\.bin\svgo.cmd133235119011260728 0
 71D:\360MoveData\Users\Hasee\Desktop\forkify\node_modules\.bin\terser.ps1133235119011270701 0
 71D:\360MoveData\Users\Hasee\Desktop\forkify\dist\forkify.3464ddca.js.map133235359335643696 0
-66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\icons.21bad73c.svg133238911489143722 0
-66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\icons.dfd7a6db.svg133238911489143722 0
+66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\icons.21bad73c.svg133239344937586808 0
+66D:\360MoveData\Users\Hasee\Desktop\forkify\dist\icons.dfd7a6db.svg133239344937596780 0
 65D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.62406edb.js133235368308905074 0
 79D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.f7626f62.css.map.14988.3w133238844908144071 0
-58D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.html133238911489153706 0
+58D:\360MoveData\Users\Hasee\Desktop\forkify\dist\index.html133239344937955821 0
